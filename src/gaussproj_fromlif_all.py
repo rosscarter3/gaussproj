@@ -37,6 +37,7 @@ def parse_xml_metadata(xml_string, array_order='zyx'):
         The resolution of each series in the order given by
         `array_order`. Time and channel dimensions are ignored.
     """
+    
     array_order = array_order.upper()
     names, sizes, resolutions = [], [], []
     spatial_array_order = [c for c in array_order if c in 'XYZ']
